@@ -4,9 +4,9 @@ from utils.parsingFromLogs import extract_m3u_link_from_latest_logs
 from utils.urlDownloader import download_file
 from utils.declutterPlaylist import declutter_playlist
 from utils.serve import run_server
-from utils.runAutomationScript import run_automation_script
+from utils.runUIAutomationScript import run_ui_automation_script
 
-run_automation_script();
+run_ui_automation_script();
 
 # Get the m3u link
 m3u_link = extract_m3u_link_from_latest_logs(delete_older=True)

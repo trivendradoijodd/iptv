@@ -1,13 +1,11 @@
 import subprocess
-import sys
-import os
 
-def run_automation_script():
+def run_ui_automation_script():
     # Define the path to Firefox executable and the URL as separate strings
     firefox_exe_path = r"C:\Program Files\Mozilla Firefox\firefox.exe"
     # Using a raw string (r"...") is good practice for Windows paths to avoid issues with backslashes
     # The URL is treated as a single argument
-    target_url = r"file:///C:\Users\rainbow\Desktop\scripts\iptv\ui.vision.html?direct=1&macro=iptv/freeiptv2023&savelog=iptvlogs.txt&closeBrowser=0"
+    target_url = r"file:///C:\Users\rainbow\Desktop\scripts\iptv\ui.vision.html?direct=1&macro=iptv/freeiptv2023&savelog=iptvlogs.txt&closeBrowser=1"
 
     try:
         # Construct the command as a list of strings
@@ -51,7 +49,7 @@ def run_automation_script():
 
 # This allows the file to be run directly for testing
 if __name__ == "__main__":
-    automation_result = run_automation_script()
+    automation_result = run_ui_automation_script()
     if automation_result:
         print(f"Automation result: {automation_result}")
     else:
