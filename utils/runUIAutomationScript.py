@@ -1,6 +1,6 @@
 import subprocess
 
-def run_ui_automation_script():
+def run_ui_automation_script(openInPrivate = False):
     # Define the path to Firefox executable and the URL as separate strings
     firefox_exe_path = r"C:\Program Files\Mozilla Firefox\firefox.exe"
     # Using a raw string (r"...") is good practice for Windows paths to avoid issues with backslashes
@@ -10,7 +10,7 @@ def run_ui_automation_script():
     try:
         # Construct the command as a list of strings
         # The first element is the executable, subsequent elements are arguments
-        command_list = [firefox_exe_path, target_url]
+        command_list = [firefox_exe_path] + ([' -private'] if openInPrivate else []) + [target_url]
 
         print(f"Attempting to execute: {command_list}")
 

@@ -1,1 +1,0 @@
-"C:\Program Files\Mozilla Firefox\firefox.exe" "file:///C:\Users\rainbow\Desktop\scripts\iptv\ui.vision.html?direct=1&macro=iptv/freeiptv2023&savelog=iptvlogs.txt&closeBrowser=0"

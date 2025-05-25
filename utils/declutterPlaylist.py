@@ -2,7 +2,7 @@
 import re
 import argparse
 
-blacklisted_languages = ["FR", "DE", "IR", "BN", "AR", "TN", "TL", "KL", "GR", "NL", "ML", "EX", "PL", "LA", "SE", "KANNADA", "TELUGU", "TELEGU", "ES"]
+blacklisted_languages = ["FR", "DE", "IR", "BN", "AR", "TN", "TL", "KL", "GR", "NL", "ML", "EX", "PL", "LA", "SE", "KANNADA", "TELUGU", "TELEGU", "ES", "IT", "PT", "JP"]
 
 def declutter_playlist(input_filepath, output_filepath, url_part1=None, url_part2=None):
     """
