@@ -10,7 +10,9 @@ def run_ui_automation_script(openInPrivate = False):
     try:
         # Construct the command as a list of strings
         # The first element is the executable, subsequent elements are arguments
-        command_list = [firefox_exe_path] + ([' -private'] if openInPrivate else []) + [target_url]
+        command_list = [firefox_exe_path, target_url]
+        if openInPrivate:
+            command_list = [firefox_exe_path,"-private-window",target_url]
 
         print(f"Attempting to execute: {command_list}")
 
